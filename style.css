@@ -1,0 +1,155 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+body { 
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+li {
+    list-style: none;
+}
+ul {
+    padding: 0;
+}
+/* Variables fonts */
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('woff2-variations');
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Young';
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('woff2-variations');
+    font-weight: 400;
+    font-style: normal;
+}
+:root {
+    --clr-pri-nutmeg: hsl(14, 45%, 36%);
+    --clr-pri-raspberry: hsl(332, 51%, 32%);
+
+    --clr-neu-white: hsl(0, 0%, 100%);
+    --clr-neu-roseWhite: hsl(330, 100%, 98%);
+    --clr-neu-eggshell: hsl(30, 54%, 90%);
+    --clr-neu-lightGrey: hsla(30, 18%, 87%, .18);
+    --clr-neu-grey: hsl(30, 18%, 87%);
+    --clr-neu-brown: hsl(30, 10%, 34%);
+    --clr-neu-charcoal: hsl(24, 5%, 18%);
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--clr-neu-eggshell);
+    font-family: 'Outfit';
+    font-size: 1rem;
+    color: var(--clr-neu-brown);
+
+}
+main {
+    background-color: var(--clr-neu-roseWhite);
+    width: 60vw;
+    padding: 40px;
+    margin: 80px 0;
+    border-radius: 15px;
+}
+main img {
+    border-radius: 15px;
+}
+h1 {
+    font-family: 'Young';
+    font-weight: 400;
+    padding: 30px 0;
+    color: var(--clr-neu-charcoal);
+}
+.recipe-concept {
+    margin-bottom: 30px;
+}
+.recipe-time {
+    background-color: var(--clr-neu-lightGrey);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.recipe-time h3 {
+    font-weight: bold;
+    color: var(--clr-pri-raspberry);
+}
+.recipe-time li {
+    list-style-type: disc;
+    margin: 10px 20px;
+}
+.recipe-time span {
+    font-weight: 600;
+    margin-left: 20px;
+    color: var(--clr-neu-brown);
+}
+h3  {
+    font-family: 'Young';
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--clr-pri-nutmeg);
+    padding: 20px 0 0 0;
+}
+.ingreList {
+    padding: 20px;
+}
+.ingreList li {
+    list-style-type: disc;
+    list-style-position: outside;
+}
+.ingreList li p {
+    padding: 10px 20px;
+}
+.line {
+    border-bottom: 1px solid var(--clr-neu-grey);
+    padding: 10px;
+}
+.orderList {
+    padding: 20px;
+}
+.orderList li {
+    list-style-type: decimal;
+    list-style-position: outside;
+    padding: 10px 0;
+}
+.orderList li::marker, .orderList span {
+    font-weight: 600;
+}
+.orderList p {
+    padding-left: 20px;
+}
+.value {
+    font-weight: bold;
+    margin-left: -30px;
+}
+.nutrition-text {
+    margin: 20px 0;
+}
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 3;
+}
+.table p {
+    border-bottom: 1px solid var(--clr-neu-grey);
+    padding-left: 40px;
+}
+.right {
+    font-weight: 600;
+    color: var(--clr-pri-nutmeg);
+    margin-left: -40px;
+}
